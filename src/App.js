@@ -1,24 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import Layout from './components/layout/Layout';
+import {Routes, Route, Navigate} from 'react-router-dom';
+import AllCharactersPage from './pages/AllCharactersPage';
+import CharacterPage from './pages/CharacterPage';
+import MyFavoritesPage from './pages/MyFavoritesPage';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Layout>
+      <Routes>
+        <Route path='/' element={<Navigate to='/characters' />} />
+        <Route path='/characters' element={<AllCharactersPage />} />
+        <Route path='/character/:id' element={<CharacterPage />} />
+        <Route path='/favorite-characters' element={<MyFavoritesPage />} />
+      </Routes>
+    </Layout>
   );
 }
 
