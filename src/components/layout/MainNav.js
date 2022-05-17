@@ -22,7 +22,7 @@ function MainNav() {
               <Nav.Link>All characters</Nav.Link>
             </LinkContainer>
             <LinkContainer to='/favorite-characters'>
-              <Nav.Link>My Favourites</Nav.Link>
+              <Nav.Link>My Favorites</Nav.Link>
             </LinkContainer>
           </Nav>
         </Navbar.Collapse>
