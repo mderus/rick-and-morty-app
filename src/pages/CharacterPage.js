@@ -54,6 +54,7 @@ function CharacterPage() {
         ) : (
           ''
         )}
+        <p style={{fontSize: '24px'}}>Created: {characterInfo.created}</p>
       </div>
       <Button
         variant='outline-primary mt-2 mb-4'
