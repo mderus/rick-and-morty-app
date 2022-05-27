@@ -10,7 +10,7 @@
 
 ## General info
 
-It's simple app created with Rick and Morty API[_here_](https://rickandmortydemo.herokuapp.com).
+It's simple app created with Rick and Morty API [_here_](https://rickandmortyapi.com/).
 
 Thanks to the app, you have access to information about the characters from the cartoon world Rick and Morty.
 You can:
